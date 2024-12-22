@@ -1,4 +1,5 @@
-Dataset: MAGIC (Major Atmospheric Gamma Imaging Cherenkov) Telescope
+Dataset: MAGIC (Major Atmospheric Gamma Imaging Cherenkov) Telescope  
+URL: http://127.0.0.1:5000
 # Description of the Dataset:
 •	MAGIC Telescope is a widely used dataset in the field of astrophysics to determine and distinguish between gamma-ray signals and hadronic background noise. Consisting of 19,020 events which are represented by 10 numerical features which describes the physical characteristics such as size, width, length, energy, and fractional dimensions.
 
