@@ -1,4 +1,4 @@
-#MAGIC Telescope Model
+# MAGIC Telescope Model
 This repository contains a machine learning model trained on the MAGIC Gamma Telescope dataset. This dataset is designed to classify high-energy gamma rays from background noise using information from imaging atmospheric Cherenkov telescopes (IACTs).
 
 Features
