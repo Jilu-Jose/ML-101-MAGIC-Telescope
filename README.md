@@ -1,7 +1,23 @@
-Dataset: MAGIC (Major Atmospheric Gamma Imaging Cherenkov) Telescope  
+#MAGIC Telescope Model
+This repository contains a machine learning model trained on the MAGIC Gamma Telescope dataset. This dataset is designed to classify high-energy gamma rays from background noise using information from imaging atmospheric Cherenkov telescopes (IACTs).
 
-# Description of the Dataset:
-•	MAGIC Telescope is a widely used dataset in the field of astrophysics to determine and distinguish between gamma-ray signals and hadronic background noise. Consisting of 19,020 events which are represented by 10 numerical features which describes the physical characteristics such as size, width, length, energy, and fractional dimensions.
+Features
+Dataset: MAGIC Gamma Telescope dataset, publicly available from the UCI Machine Learning Repository.
+Model Type: Random Forest
 
-•	The overall attributes capture the geometry and intensity of the observed atmospheric showers. The target variable of this dataset is binary, indicating whether an event is a gamma-ray or a hadron. Gamma-ray classification is crucial for astronomical studies in order to identify cosmic sources of gamma radiation.
+Input Features:
+FLength: Major axis of the ellipse (length)
+FWidth: Minor axis of the ellipse (width)
+FSize: Size of the ellipse (integrated image intensity)
+FConc: Ratio of sum of two highest pixels to the FSize
+FConc1: Ratio of the highest pixel to the FSize
+FAsym: Distance from the highest pixel to the center
+FM3Long: Third root of the third moment along the major axis
+FM3Trans: Third root of the third moment along the minor axis
+FAlpha: Angle of the major axis with the vector to the origin
+FDist: Distance from the origin to the center of the ellipse
 
+
+Output: Classification of event type:
+'1' for gamma rays
+'0' for hadrons (background noise)
